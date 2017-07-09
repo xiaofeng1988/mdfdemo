@@ -1,0 +1,560 @@
+﻿html, body, form
+{
+	font-family: 微软雅黑;
+	font-size: 12px;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	overflow:auto;
+	scrollbar-base-color: red;
+	scrollbar-darkshadow-color: #dbdcfa;
+	scrollbar-3dlight-color: #dbdcfa;
+	scrollbar-face-color: #e0e0e0;
+	scrollbar-highlight-color: #f9f9f9;
+	scrollbar-shadow-color: #f9f9f9;
+	scrollbar-arrow-color: #223;
+}
+body
+{
+	background: url(../images/common/pageback.jpg) bottom repeat-x;
+}
+input, select, textarea
+{
+	font-family: 微软雅黑;
+}
+table
+{
+	font-family: 微软雅黑;
+	font-size: 12px;
+	border-collapse: collapse;
+}
+a
+{
+	color: Black;
+}
+a:hover
+{
+	color: Black;
+	text-decoration: underline;
+}
+
+.left
+{
+	width: 100px;
+}
+
+.table
+{
+	font-size: 12px;
+	border: solid 1px #7E9DB9;
+	border-collapse: collapse;
+	width: 100%;
+}
+.table td
+{
+	padding: 5px;
+	border: solid 1px #7E9DB9;
+}
+.table th
+{
+	padding: 2px;
+	border: solid 1px #7E9DB9;
+	background: #667;
+}
+.table .cell
+{
+	height: 30px;
+	width: 100px;
+}
+.clearTable
+{
+	border: 0px;
+}
+.clearTable td
+{
+	border: 0px;
+	padding: 2px;
+	margin:auto;
+}
+.comRow
+{
+	height: 25px;
+}
+.currentText
+{
+	color:#55a;
+	}
+
+.tc
+{
+	text-align: center;
+}
+.full
+{
+	width: 100%;
+	
+}
+.hfull
+{
+	width: 100%;
+}
+.vfull
+{
+	height: 100%;
+}
+.scroll
+{
+	overflow: auto;
+}
+.vm
+{
+	vertical-align: middle;
+}
+.fl
+{
+	float: left;
+}
+.fr
+{
+	float: right;
+}
+.cb
+{
+	clear: both;
+}
+.nowrap
+{
+	white-space: nowrap;
+}
+
+.flatBtn
+{
+	border: solid 1px #ddd;
+	background: transparent;
+	height: 26px;
+	font-weight: bold;
+}
+.btn
+{
+	border: solid 1px #cce;
+	height: 26px;
+	background: url(../images/common/btnback.png);
+}
+.sbutton
+{
+	border: solid 1px #cce;
+	height: 26px;
+	background: url(../images/common/btnback.png);
+}
+.box
+{
+	height: 26px;
+	line-height: 26px;  	
+	border: solid 1px #bEDFF8; 	
+	background: #FFF; 
+}
+
+.buttonContainer
+{
+	padding-left: 1px;
+	font-size: 12px;
+	height: 30px;
+	background: url(../images/common/btncontainerback.png);
+}
+
+
+
+
+.panSearch
+{
+	background: #fff;
+	border: solid 1px #7E9DB9;
+	position: absolute;
+	width: 400px;
+	display: none;
+	z-index: 1001; /*filter: progid:DXImageTransform.Microsoft.Shadow(color=#ccc,direction=120,strength=5);*/
+}
+.panSearch .header
+{
+	background: url(../images/common/pansearchheaderback.png);
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-indent: 15px;
+	font-weight: bold;
+}
+.panSearch .header.titleText
+{
+	float: left;
+	margin-left: 5px;
+}
+.panSearch .header.closeBtn
+{
+	float: right;
+	width: auto;
+	height: auto;
+	cursor: hand;
+	margin-right: 5px;
+	font-size:25px;
+}
+.panSearch .body
+{
+}
+.panSearch .buttonContainer
+{
+	height: 33px;
+	background: #eef;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.panSearch .buttonContainer input
+{
+	margin-top: 2px;
+	border: solid 1px #cce;
+	height: 26px;
+	background: url(../images/common/btnback.png);
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+.tree
+{
+	color: #aaa;
+}
+.tree a
+{
+	color: #122548;
+}
+.tree td
+{
+	padding: 0px;
+}
+
+
+
+.gridView
+{
+	border: solid 1px #A6BDDA;
+	border-top: 0px;
+	width: 100%;
+	white-space: nowrap;
+}
+.gridView th
+{
+	border-width: 0px;
+	border-left: dotted 1px #ccf;
+	background: url(../images/explorer/headerback.png) repeat-x;
+	color: #55A;
+	height: 23px;
+	line-height: 23px;
+	text-align: left;
+	white-space: nowrap;
+}
+.gridView a
+{
+	font-weight: bold;
+	text-decoration: none;
+}
+.gridView th a
+{
+	color: #55A;
+}
+.gridView a:hover
+{
+	text-decoration: underline;
+}
+.gridView td
+{
+	text-align: left;
+	border: dotted 1px #ccf;
+	border-right-width: 0px;
+	border-top-width: 0px;
+	padding: 0px 2px;
+	cursor: default;
+	height: 22px;
+	line-height: 22px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.gridView img
+{
+	border:0px;
+}
+
+.gridView .row
+{
+}
+.gridView .selectedRow
+{
+	background: #BDDBF8;
+}
+.gridView .alternatingRow
+{
+	background: #f8f8f8;
+}
+.gridView .mouseOverRow
+{
+	background: #eee;
+}
+.gridView .editRow input
+{
+	border: solid 0px #556655;
+	background: #C5CAD0;
+}
+.gridView .wraning
+{
+	background: red;
+}
+
+.gridView a
+{
+	color: #222;
+	text-decoration: none;
+}
+
+.gridView .onefilename
+{
+	width: 120px;
+	white-space: nowrap;
+}
+
+.gridView .mulfilename
+{
+	width: 300px;
+}
+
+.gridView .usercell
+{
+	width: 100px;
+}
+
+.gridView .timecell
+{
+	width: 120px;
+}
+
+.gridView .statecell
+{
+	width: 100px;
+}
+
+.gridView .linkcell
+{
+	width: 80px;
+}
+
+.gridView .longcell
+{
+	width: 120px;
+}
+
+.gridView .checkcell
+{
+	width: 10px;
+}
+.gridView .selectCell
+{
+	width: 10px;
+}
+.gridView .icon
+{
+	margin-right: 5px;
+	width: 17px;
+	height: 17px;
+	line-height: 17px;
+}
+
+
+.listItem
+{
+	width: 100px;
+	height: 100px;
+	padding: 2px;
+	margin: 2px;
+}
+.listItem .imgCon
+{
+	height: 70px;
+}
+.listItem .descCon
+{
+}
+.listItem .desc
+{
+	height: 20px;
+	line-height: 20px;
+}
+
+
+
+.mask
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 100;
+	background: blue;
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+}
+.wait
+{
+	padding: 10px;
+	position: absolute;
+	z-index: 201;
+	background: #fff;
+	border: solid 1px #7F9CB9;
+	top: 40%;
+	left: 40%;
+}
+
+
+.hidden
+{
+	display: none;
+}
+.float
+{
+	position: absolute;
+	z-index: 101;
+}
+.oh
+{
+	overflow: hidden;
+}
+
+
+.dzsj_info
+{
+	background: #dedede;
+	border: solid 1px #7F9CB9;
+	padding: 5px;
+}
+.dzsj_info td
+{
+	padding: 2px;
+}
+.dzsj_info input
+{
+	width: 85px;
+}
+.floatRemark
+{
+	border: solid 1px gray;
+	background: silver;
+	width: 350px;
+	padding: 5px;
+}
+
+.time
+{
+	font-size: 10px;
+	color: #ccc;
+}
+.name
+{
+	color: Blue;
+}
+.msg
+{
+	font-size: 11px;
+	border-top: solid 1px #ddd;
+	background: #eee;
+	margin-top: 10px;
+	text-indent: 20px;
+	padding: 2px;
+}
+.selected_text
+{
+	color: Red;
+}
+.clew_span
+{
+	color: Red;
+	font-size: 10px;
+}
+
+.panLinkContainer
+{
+	height: 60px;
+	background: #eef;
+	border: solid 1px #ddd;
+	padding: 5px;
+}
+
+
+
+.rightMainTitle
+{
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	background: url(../images/index/navigat_back.gif);
+}
+
+.noRecord
+{
+	background: #CAD5DF;
+	width: 100%;
+	padding: 15px;
+}
+
+.arrow
+{
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='skins/default/images/common/arrow.png', sizingMethod='scale');
+	width: 6px;
+	height: 9px;
+	line-height: 0px;
+	overflow: hidden;
+	vertical-align: middle;
+	margin: auto 3px;
+}
+
+.childFilesContainer
+{
+	margin: 5px;
+	text-align: left;
+}
+.childFilesContainer .nodeContainer
+{
+	margin-left: 10px;
+}
+
+.childFilesContainer .folderItem
+{
+	background: #ccd;
+	cursor: default;
+	height: 25px;
+	line-height: 25px;
+	text-indent: 5px;
+	font-weight: bold;
+}
+
+.childFilesContainer .fileItem
+{
+	background: #eef;
+	cursor: hand;
+	height: 25px;
+	line-height: 25px;
+	margin: 2px auto;
+	text-indent: 5px;
+}
+.childFilesContainer .fileHoverItem
+{
+	background: #dde;
+}
+
+.openIcon
+{
+	background: url(../images/common/open.gif);
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	line-height: 0px;
+	cursor: hand;
+}

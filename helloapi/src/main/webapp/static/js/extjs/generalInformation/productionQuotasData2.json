@@ -1,0 +1,14 @@
+{"rows":[{"item":"原煤","unit":"万吨","monthPlan":"207.06","monthComplete":"190.67","monthOver":"-16.38","monthProgress":"992.1","yearPlan":"11243.84","yearComplete":"11274.80","yearOver":"30.96","yearProgress":"100.3"},
+	{"item":"商品煤","unit":"万吨","monthPlan":"150.19","monthComplete":"144.99","monthOver":"-5.20","monthProgress":"96.5","yearPlan":"8310.38","yearComplete":"8539.20","yearOver":"228.92","yearProgress":"102.8"},
+	{"item":"铁路外运","unit":"万吨","monthPlan":"112.55","monthComplete":"109.83","monthOver":"-2.71","monthProgress":"97.6","yearPlan":"6136.77","yearComplete":"5936.27","yearOver":"-200.49","yearProgress":"96.7"},
+	{"item":"煤炭贸易","unit":"万吨","monthPlan":"182.20","monthComplete":"186.74","monthOver":"4.55","monthProgress":"102.5","yearPlan":"11843.31","yearComplete":"10819.61","yearOver":"-1023.70","yearProgress":"91.4"},
+	{"item":"发电量","unit":"万度","monthPlan":"4794","monthComplete":"5731","monthOver":"937","monthProgress":"119.5","yearPlan":"2514.24","yearComplete":"279037","yearOver":"27613","yearProgress":"111.0"},
+	{"item":"焦炭产量","unit":"吨","monthPlan":"19355","monthComplete":"21053","monthOver":"1698","monthProgress":"108.8","yearPlan":"1065205","yearComplete":"1103267","yearOver":"39062","yearProgress":"103.6"},
+	{"item":"煤基天然气","unit":"万米","monthPlan":"101","monthComplete":"92","monthOver":"-8","monthProgress":"918","yearPlan":"4734","yearComplete":"4538","yearOver":"-196","yearProgress":"95.9"},
+	{"item":"液氨","unit":"吨","monthPlan":"1729","monthComplete":"1975","monthOver":"246","monthProgress":"114.2","yearPlan":"79890","yearComplete":"58586","yearOver":"-21304","yearProgress":"73.3"},
+	{"item":"尿素","unit":"吨","monthPlan":"2581","monthComplete":"2843","monthOver":"262","monthProgress":"110.2","yearPlan":"133151","yearComplete":"74203","yearOver":"-58948","yearProgress":"55.7"},
+	{"item":"甲醇","unit":"吨","monthPlan":"1884","monthComplete":"1687","monthOver":"-197","monthProgress":"89.6","yearPlan":"118356","yearComplete":"100070","yearOver":"-18286","yearProgress":"84.5"},
+	{"item":"电解铝","unit":"吨","monthPlan":"568","monthComplete":"597","monthOver":"29","monthProgress":"105.2","yearPlan":"29589","yearComplete":"34976","yearOver":"5387","yearProgress":"118.2"},
+	{"item":"施工成巷","unit":"米","monthPlan":"2043","monthComplete":"2401","monthOver":"358","monthProgress":"117.5","yearPlan":"102378","yearComplete":"131618","yearOver":"29240","yearProgress":"128.6"},
+	{"item":"剥离量","unit":"万米","monthPlan":"424","monthComplete":"385","monthOver":"-39","monthProgress":"90.7","yearPlan":"26133","yearComplete":"24157","yearOver":"-1976","yearProgress":"92.4"}
+]}

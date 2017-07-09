@@ -1,0 +1,7 @@
+{"rows":[{"item":"集团公司","item2":"产量","unit":"吨","monthPlan":"30927","monthComplete":"24728","monthOver":"-6199","monthProgress":"80.0","yearPlan":"151036","yearComplete":"156597","yearOver":"5561","yearProgress":"103.7"},
+{"item":"集团公司","item2":"销量","unit":"吨","monthPlan":"35260","monthComplete":"36590","monthOver":"1330","monthProgress":"103.8","yearPlan":"165369","yearComplete":"139516","yearOver":"-25853","yearProgress":"84.4"},
+{"item":"焦化公司","item2":"产量","unit":"吨","monthPlan":"9260","monthComplete":"9232","monthOver":"-28","monthProgress":"99.7","yearPlan":"73369","yearComplete":"66075","yearOver":"-7294","yearProgress":"90.1"},
+{"item":"焦化公司","item2":"销量","unit":"吨","monthPlan":"9260","monthComplete":"10238","monthOver":"978","monthProgress":"110.6","yearPlan":"73369","yearComplete":"67983","yearOver":"-5386","yearProgress":"92.7"},
+{"item":"鄂能化公司","item2":"产量","unit":"吨","monthPlan":"21667","monthComplete":"15496","monthOver":"-6171","monthProgress":"71.5","yearPlan":"77667","yearComplete":"90522","yearOver":"12855","yearProgress":"116.6"},
+{"item":"鄂能化公司","item2":"销量","unit":"吨","monthPlan":"26000","monthComplete":"26352","monthOver":"352","monthProgress":"101.4","yearPlan":"92000","yearComplete":"71533","yearOver":"-20467","yearProgress":"77.8"}
+]}
