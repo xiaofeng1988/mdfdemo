@@ -35,5 +35,6 @@
           <table schema="" tableName="api_user_team" />
           <table schema="" tableName="api_user" />
           
+          
   </context>
 </generatorConfiguration>
