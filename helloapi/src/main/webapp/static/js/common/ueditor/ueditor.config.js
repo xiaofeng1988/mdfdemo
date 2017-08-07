@@ -20,7 +20,7 @@
      * window.UEDITOR_HOME_URL = "/xxxx/xxxx/";
      */
     //var URL = window.UEDITOR_HOME_URL || getUEBasePath();
-	//var URL = window.UEDITOR_HOME_URL || "/zmsys/view/portal/ueditor/";
+	//var URL = window.UEDITOR_HOME_URL || "/zjugis/view/portal/ueditor/";
 	var URL = window.UEDITOR_HOME_URL || "/static/js/common/ueditor/";
 
     /**

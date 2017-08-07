@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<%@ page import="com.longruan.zmsys.common.util.Uploader" %>
+<%@ page import="com.wws.zjugis.common.util.Uploader" %>
 
 
 <%

@@ -4,7 +4,7 @@
 jQuery.LrMap = {
     // create map
     initializeMap: function (id, url, params, callback){
-        var crs = new L.CRS.LongruanGlobal();
+        var crs = new L.CRS.wwsGlobal();
         var options = { svr:url, crs: crs,
             worldCopyJump: false,
             minZoom: 4,

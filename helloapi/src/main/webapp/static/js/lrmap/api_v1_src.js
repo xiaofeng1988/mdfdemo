@@ -7862,7 +7862,7 @@ L.control.zoom = function (options) {
 L.Control.Attribution = L.Control.extend({
     options: {
         position: 'bottomright',
-        prefix: '<a href="http://www.longruan.com" title="Longruan Web Client">V1.0</a>'
+        prefix: '<a href="http://www.wws.com" title="wws Web Client">V1.0</a>'
     },
 
     initialize: function (options) {
@@ -8910,14 +8910,14 @@ L.Map.include({
 /*
  * zpp@2013-09-05 23:53:11
  * (1) add svr, uid attribute to map;
- * (2) modify 'http://leafletjs.com' to 'http://www.longruan.com';
+ * (2) modify 'http://leafletjs.com' to 'http://www.wws.com';
  * (3) add the extent as follow...;
  */
 
 /*
  * lrgis screen and real coordinate transformation
  */
-L.Projection.LongruanGlobal = L.Class.extend({
+L.Projection.wwsGlobal = L.Class.extend({
   initialize: function()
   {
     this.scaleparam = 512.0 / 360.0;
@@ -8933,15 +8933,15 @@ L.Projection.LongruanGlobal = L.Class.extend({
 });
 
 /*
- * CRS.Longruan is used for coordinate system of Longruan GIS
+ * CRS.wws is used for coordinate system of wws GIS
  */
-L.CRS.LongruanGlobal = L.Class.extend({
+L.CRS.wwsGlobal = L.Class.extend({
   includes: L.CRS,
   transformation: new L.Transformation(1, 0, 1, 0),
 
   initialize: function()
   {
-    this.projection = new L.Projection.LongruanGlobal();
+    this.projection = new L.Projection.wwsGlobal();
   },
 
   scale: function (zoom) {
@@ -9379,7 +9379,7 @@ L.Marker.include(L.Mixin.ContextMenu);
 
 /*
  * ===================================
- * Longruan GIS Map Utility
+ * wws GIS Map Utility
  * ===================================
  */
 L.MapUtil = {

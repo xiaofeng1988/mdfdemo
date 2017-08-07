@@ -51,7 +51,7 @@ function CloseTab(tabId, tabMenuId, type) {
             	tabs.tabs("update",{
             		tab:tab,
             		options:{
-            			content:'<div class="easyui-panel" style="overflow: hidden;" data-options="fit:true,border:false" ><iframe src="/zmsys/view/desk/desk.jsp" frameborder="no" scrolling="no" style="height:100%;width:100%;margin:0;"></iframe></div>'
+            			content:'<div class="easyui-panel" style="overflow: hidden;" data-options="fit:true,border:false" ><iframe src="/zjugis/view/desk/desk.jsp" frameborder="no" scrolling="no" style="height:100%;width:100%;margin:0;"></iframe></div>'
             			//content:url
             		}
             	})

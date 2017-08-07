@@ -9,7 +9,7 @@
     <%@ page import="java.io.File"%>
     <%@ page import="java.io.FileOutputStream"%>
     <%@ page import="java.util.Date"%>
-    <%@ page import="com.longruan.zmsys.common.util.Uploader" %>
+    <%@ page import="com.wws.zjugis.common.util.Uploader" %>
 
     <%
     request.setCharacterEncoding("utf-8");

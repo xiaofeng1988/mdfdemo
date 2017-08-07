@@ -5,7 +5,7 @@
         <%@ page import="java.util.Iterator" %>
         <%@ page import="java.util.Arrays" %>
         <%@ page import="java.io.FileInputStream" %>
-        <%@ page import="com.longruan.zmsys.common.util.Uploader" %>
+        <%@ page import="com.wws.zjugis.common.util.Uploader" %>
 
             <%
 

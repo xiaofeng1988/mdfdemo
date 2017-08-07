@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/logo/logo.css">
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/css/index.css">
     <%@ include file="common/common.jsp"%>
-    <title>品融集团生产运行管理信息系统</title>
+    <title>JAVA基础开发平台</title>
 </head>
 <body class="easyui-layout" id="body1" onload="closeTopLoading()"> 
     <div data-options="region:'north',border:false,onCollapse:function(){northmax=false;$('#northExpand').val(false);},onExpand:function(){northmax=true;$('#northExpand').val(true);if(westmax){setmaxbutton('全屏','icon-maxfull');ismax=false;}}"
@@ -206,11 +206,6 @@
             </table>
         </div>
     </div>
-    <div id='alarmDivOut' style="position: relative;display:none;"><!-- display:''; -->
-    	<div id='alarmDiv'>目前没有报警信息</div>
-    	<br/><br/>
-    	<!--<div id="bottom_link" style="position: absolute; top:120px; left:3px;"><a href="#" onclick="openDetailAlarmPage('')">更多...</a></div>-->
-    </div>
     
     <div id='dateComplateProcessDivOut' style="position: relative;display:'none';">
     </div>
@@ -322,123 +317,11 @@
                         $(this).addClass('hover');
                     });
                 });
-            //});
-            var userdeptid = '${sysuser.deptid}';
-            		//alert(userdeptid);
-            //自动刷新报警弹出窗口	
-            //getTopAlarm('slide');
-<%--            window.setInterval(function()--%>
-<%--		    { --%>
-<%--		    	//毛文龙 注释 gasController 中没有对应的方法。 --%>
-<%--			    getTopAlarm('slide');--%>
-<%--		        //alert(document.getElementById("alarmDiv").innerHTML);--%>
-<%--		    }, 10000);//30秒请求一次--%>
-<%----%>
-<%--		   	// 判断当前用户是否在日完成流程节点中--%>
-<%--			$.post("${rootPath }/productionDispatch/checkProcess/currUserIsInProcess", null, function(data){--%>
-<%--				if(data>0){--%>
-<%--					// 日完成--%>
-<%--				    window.setInterval(function()--%>
-<%--				    { --%>
-<%--					    getDateComplateProcess();--%>
-<%--				    }, 1000 * 60 * 5 );  // 5分钟--%>
-<%--				} --%>
-<%--			});--%>
-		    
 		   
       		});
       });
         
-      var slideIsOpen=false;
-      //获取报警信息
-      function getTopAlarm(){
-      	$.ajax({  
-	        url:'${rootPath }/gasController/alarm/top',  
-	        type:"POST",  
-	        dataType:"json",  
-	        success:function(result){
-	        	var content='<table border=0 id="talarm" class="tableXX" style="font-size:13px;border-collapse:separate;border-spacing:   10px;">';  
-	        	if(result != null && result.length>0){
-		        	for(i=0;i<result.length;i++){
-		        		content+='<tr>';
-		        		if(result[i].wtype==2){//频次
-		        			//content+='<p><font face="黑体">'+result[i].sysdept.shortName+'  位于'+result[i].location+'的'+'  '+result[i].codename+'传感器  在规定时间内报警 '+result[i].repeat+' 次'+'   <a href="#" onclick="openDetailAlarmPage(&quot;${rootPath }/view/gas/AlarmData.jsp?bhid='+result[i].id+'&quot;)">详细</a>'+'</font></p>';
-		        			content+='<td><font face="黑体">'+result[i].sysdept.shortName+'  位于'+result[i].location+'的'+'  '+result[i].codename+'传感器  在规定时间内报警 '+result[i].repeat+' 次</td><td style="border-bottom:0" align="right">'+'   <a href="#" onclick="openDetailAlarmPage(&quot;${rootPath }/gasController/alarmConfigRedirect?bhid='+result[i].id+'&quot;)">详细>></a>'+'</font></td>';
-		        		}else if(result[i].wtype==3){//超时
-		        			//content+='<p><font face="黑体">'+result[i].sysdept.shortName+'  位于'+result[i].location+'的'+'  '+result[i].codename+'传感器  发生超时未处理报警 '+'   <a href="#" onclick="openDetailAlarmPage(&quot;${pageContext.request.contextPath}/view/gas/AlarmData.jsp?bhid='+result[i].id+'&quot;)">详细</a>'+'</font></p>';
-		        			content+='<td><font face="黑体">'+result[i].sysdept.shortName+'  位于'+result[i].location+'的'+'  '+result[i].codename+'传感器  发生超时未处理报警 </td><td style="border-bottom:0">'+'   <a href="#" onclick="openDetailAlarmPage(&quot;${rootPath }/gasController/alarmConfigRedirect?bhid='+result[i].id+'&quot;)">详细>></a>'+'</font></td>';
-		        		}else if(result[i].wtype==1){//阈值
-		        			//content+='<p><font face="黑体">'+result[i].sysdept.shortName+'  位于'+result[i].location+'的'+'  '+result[i].codename+'传感器  发生超过阈值报警 '+'   <a href="#" onclick="openDetailAlarmPage(&quot;${pageContext.request.contextPath}/view/gas/AlarmData.jsp?bhid='+result[i].id+'&quot;)">详细</a>'+'</font></p>';
-		        			content+='<td><font face="黑体">'+result[i].sysdept.shortName+'  位于'+result[i].location+'的'+'  '+result[i].codename+'传感器  发生阈值报警 </td><td style="border-bottom:0">'+'   <a href="#" onclick="openDetailAlarmPage(&quot;${rootPath }/gasController/alarmConfigRedirect?bhid='+result[i].id+'&quot;)">详细>></a>'+'</font></td>';
-		        		}
-		        		content+='</tr>';
-		        	}
-		        	content+='<tr class="last"><td></td><td><a href="#" onclick="openDetailAlarmPage(\'\')">更多>></a></td>';
-		        	content+='</table>';
-	            	var hasMess=hastalarmMessager();
-	            	$("#alarmDiv").html('');
-	            	$("#alarmDiv").html(content);
-	            	if(!hasMess && $("#alarmDivOut").html()!=undefined){
-	            		timing('slide');
-	            	}
-	            }
-	        }  
-	    });
-      }
 
-      // 日完成
-	function getDateComplateProcess(){
-		$.ajax({  
-	        url:'${rootPath }/productionDispatch/checkProcess/dateComplateProcess',  
-	        type:"POST",  
-	        dataType:"json",  
-	        success:function(result){
-	        	var content='<table border=0 id="tDateComplateProcess" class="tableXX" style="font-size:13px;border-collapse:separate;border-spacing:   10px;">';  
-	        	if(result != null && result.total>0){
-	        		for(i=0;i<result.total;i++){
-		        		content+='<tr>';
-		        		if(result.rows[i].FILLCOUNT==0){ 
-		        			content+='<td>'+result.rows[i].DEPTSHORTNAME+'  <font color="red">没有填报</font></td>';
-		        		}else if(result.rows[i].FILLCOUNT>0){ 
-		        			content+='<td><font color="黑体">'+result.rows[i].DEPTSHORTNAME+' 于 '+result.rows[i].CREATETIME+' 由 '+result.rows[i].USERNAME+' 执行了 '+result.rows[i].DOWHAT+' 操作</font></td>';
-		        		} 
-		        		content+='</tr>';
-		        	}
-		        	content+='</table>';
-		        	var hasMess=hasDateComplateProcessMessager();
-					if(!hasMess){
-						dateComplateProcess('slide', content);
-					}
-	            }
-	        }  
-	    });
-			
-	}
-
-	function dateComplateProcess(type, content){
-		$.messager.show({
-			title:'日完成审批流程',
-			width:520,
-			height:220,
-			msg:content,
-			timeout:-1,
-			showType:type
-		});
-	}
-      
-      function timing(showType){
-      	//报警提示信息
-        $.messager.show({
-				title:'报警提示',
-				width:520,
-				height:220,
-				//minimizable:true,
-				collapsible:true,
-				msg:$('#alarmDivOut'),
-				timeout:-1,
-				showType:showType
-		});
-      }
       /** 
 	    *判断页面是否已经打开window框 
 	    */  
@@ -510,12 +393,6 @@
 				}
 			}
 		}
-		
-<%--        DOCUMENT.ONCLICK = FUNCTION () {--%>
-<%--            IF (WINDOW.DOCUMENT.ACTIVEELEMENT.ID != 'DEPTLINK' && WINDOW.DOCUMENT.ACTIVEELEMENT.ID != 'DEPTTREE') {--%>
-<%--                $('#DEPTTREE').PANEL('CLOSE');--%>
-<%--            }--%>
-<%--        };--%>
 
         //加载二级菜单
         function loadtreemenu(fatherId,name, url) { 
@@ -548,6 +425,15 @@
                 },
                 onExpand:function(node){
 					//$(this).tree("load");					
+                },
+                onLoadSuccess:function(node,data){ 
+                	//初始化页面
+                    var rootNode = $('#treemenu').tree('getRoot');
+                  //  alert(rootNode.id);
+                  if(rootNode!=null){
+                	  $('#treemenu').tree('select', rootNode.target);
+                  }
+                   
                 }
             });
         }
@@ -882,7 +768,7 @@
 		    		 var result=eval('('+data+')');
 					 if (!result.success){
 						 alert("您的会话已经失效，请重新登陆！");
-						 window.location.replace("/zmsys/loginOut"); 
+						 window.location.replace("/wwsgis/loginOut"); 
 					 }
 				 });
 			  }
