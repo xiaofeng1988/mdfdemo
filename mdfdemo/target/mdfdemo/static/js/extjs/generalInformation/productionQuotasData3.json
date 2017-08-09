@@ -1,0 +1,14 @@
+{"rows":[{"item":"原煤","unit":"万吨","monthPlan":"713.72","monthComplete":"710.12","monthOver":"-3.60","monthProgress":"99.5","yearPlan":"5560.27","yearComplete":"5640.17","yearOver":"79.90","yearProgress":"101.4"},
+	{"item":"商品煤","unit":"万吨","monthPlan":"529.30","monthComplete":"513.80","monthOver":"-15.50","monthProgress":"97.1","yearPlan":"4137.93","yearComplete":"4238.32","yearOver":"100.39","yearProgress":"102.4"},
+	{"item":"铁路外运","unit":"万吨","monthPlan":"361.53","monthComplete":"399.41","monthOver":"37.88","monthProgress":"110.5","yearPlan":"2946.83","yearComplete":"3132.16","yearOver":"185.32","yearProgress":"106.3"},
+	{"item":"煤炭贸易","unit":"万吨","monthPlan":"462.69","monthComplete":"768.14","monthOver":"125.45","monthProgress":"119.5","yearPlan":"4693.15","yearComplete":"5004.93","yearOver":"311.78","yearProgress":"106.6"},
+	{"item":"剥离","unit":"立方米","monthPlan":"1425","monthComplete":"1668","monthOver":"243","monthProgress":"117.1","yearPlan":"10975","yearComplete":"11675","yearOver":"700","yearProgress":"106.4"},
+	{"item":"掘进进尺","unit":"万立方米","monthPlan":"8910","monthComplete":"9476","monthOver":"566","monthProgress":"106.4","yearPlan":"66711","yearComplete":"65406","yearOver":"-1305","yearProgress":"98.0"},
+	{"item":"矿建施工成巷","unit":"米","monthPlan":"7848","monthComplete":"9328","monthOver":"1480","monthProgress":"118.9","yearPlan":"44322","yearComplete":"52015","yearOver":"7693","yearProgress":"117.4"},
+	{"item":"发电","unit":"万度","monthPlan":"12387","monthComplete":"16581","monthOver":"4194","monthProgress":"133.9","yearPlan":"118852","yearComplete":"134671","yearOver":"15815","yearProgress":"113.3"},
+	{"item":"甲醇","unit":"吨","monthPlan":"16770","monthComplete":"12793","monthOver":"-3977","monthProgress":"76.3","yearPlan":"126380","yearComplete":"141593","yearOver":"15212","yearProgress":"112.0"},
+	{"item":"尿素","unit":"吨","monthPlan":"30927","monthComplete":"24728","monthOver":"-6199","monthProgress":"80.0","yearPlan":"151036","yearComplete":"156597","yearOver":"5561","yearProgress":"103.7"},
+	{"item":"煤基天然气","unit":"万立方米","monthPlan":"364","monthComplete":"387","monthOver":"23","monthProgress":"106.2","yearPlan":"2722","yearComplete":"2884","yearOver":"162","yearProgress":"105.9"},
+	{"item":"焦炭","unit":"吨","monthPlan":"6.70","monthComplete":"6.98","monthOver":"0.28","monthProgress":"104.2","yearPlan":"53.05","yearComplete":"54.66","yearOver":"1.61","yearProgress":"103.0"},
+	{"item":"水泥","unit":"吨","monthPlan":"21667","monthComplete":"19778","monthOver":"-1889","monthProgress":"91.3","yearPlan":"74667","yearComplete":"55178","yearOver":"-19489","yearProgress":"73.9"}
+]}
