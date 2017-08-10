@@ -1,7 +1,0 @@
-{"rows":[{"item":"集团公司","item2":"产量","unit":"吨","monthPlan":"16770","monthComplete":"12793","monthOver":"-3977","monthProgress":"76.3","yearPlan":"126380","yearComplete":"141593","yearOver":"15212","yearProgress":"112.0"},
-{"item":"集团公司","item2":"销量","unit":"吨","monthPlan":"15600","monthComplete":"8812","monthOver":"-6788","monthProgress":"56.5","yearPlan":"88600","yearComplete":"125926","yearOver":"37326","yearProgress":"142.1"},
-{"item":"龙化公司","item2":"产量","unit":"吨","monthPlan":"7670","monthComplete":"7578","monthOver":"-92","monthProgress":"98.8","yearPlan":"60580","yearComplete":"59886","yearOver":"-694","yearProgress":"98.9"},
-{"item":"龙化公司","item2":"销量","unit":"吨","monthPlan":"6500","monthComplete":"8308","monthOver":"1808","monthProgress":"127.8","yearPlan":"57800","yearComplete":"50118","yearOver":"-7682","yearProgress":"86.7"},
-{"item":"蒙大公司","item2":"产量","unit":"吨","monthPlan":"9100","monthComplete":"5214","monthOver":"-3886","monthProgress":"57.3","yearPlan":"65800","yearComplete":"81706","yearOver":"15906","yearProgress":"124.2"},
-{"item":"蒙大公司","item2":"销量","unit":"吨","monthPlan":"9100","monthComplete":"504","monthOver":"-8596","monthProgress":"5.5","yearPlan":"115440","yearComplete":"75808","yearOver":"-39632","yearProgress":"65.7"}
-],"total":6}
